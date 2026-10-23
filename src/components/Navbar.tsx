@@ -307,32 +307,7 @@ export const Navbar: React.FC = () => {
               <span className="text-slate-950 font-bold">{breadcrumb.label}</span>
             </nav>
 
-            {/* Dedicated Page Link Display & Copy Button */}
-            <div className="flex items-center gap-2">
-              <span
-                dir="ltr"
-                className="font-mono text-[11px] text-slate-700 bg-white px-2.5 py-1 rounded-md border border-slate-300 select-all"
-              >
-                simenesegyptcables.com{currentPath}
-              </span>
-              <button
-                type="button"
-                onClick={handleCopyPageLink}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-bold transition-colors cursor-pointer whitespace-nowrap shrink-0"
-              >
-                {copiedUrl ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-700" />
-                    <span>تم النسخ</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-3.5 h-3.5 text-slate-700" />
-                    <span>نسخ الرابط</span>
-                  </>
-                )}
-              </button>
-            </div>
+            
           </div>
         </div>
       )}
